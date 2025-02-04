@@ -1,4 +1,4 @@
-var bufferzone_intactness = function(intactness_layer,study_area_shp,study_area,zoom_level){
+exports.bufferzone_intactness = function(intactness_layer,study_area_shp,study_area,zoom_level){
   Map.centerObject(study_area_shp,zoom_level)
   Map.addLayer(study_area_shp,{},study_area)
   var intactness_vis = {min: 0,max: 1.0,
